@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "delete-postgres"
+version = "0.1.0"
+description = ""
+authors = ["Brenda Thng <brenda.thng@messari.io>"]
+readme = "README.md"
+packages = [{include = "delete_postgres"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dotenv = "^0.0.5"
+
+[tool.poetry.group.dev.dependencies]
+tqdm = "^4.66.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
