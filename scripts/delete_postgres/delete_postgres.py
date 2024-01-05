@@ -132,8 +132,8 @@ def execute_delete_queries(connection, filter_dates):
 
 if __name__ == "__main__":
     # Connect to the PostgreSQL database
-    start_date_params = 2023, 9, 1
-    num_days = 0
+    start_date_params = 2023, 10, 26
+    num_days = 6
     filter_dates = [
         (datetime(*start_date_params) + timedelta(days=i)).strftime("%Y-%m-%d")
         for i in range(0, num_days)
